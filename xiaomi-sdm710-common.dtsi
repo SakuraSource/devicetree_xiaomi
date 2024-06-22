@@ -319,7 +319,12 @@
 
 &pm660l_wled {
 	status = "okay";
-	qcom,led-strings-list = [01 02];
+	linux,name = "wled";
+	qcom,fs-current-limit = <20000>;
+	qcom,string-cfg = <5>;
+	qcom,ovp = <29600>;
+	qcom,en-cabc;
+	qcom,switching-freq = <600>;
 };
 
 &mdss_mdp {
