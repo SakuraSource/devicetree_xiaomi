@@ -106,7 +106,7 @@
 	};
 };
 
-&dsi_ss_fhd_ea8076_cmd {
+&dsi_ss_fhd_ea8076_cmd_display {
 	qcom,dsi-display-active;
 	qcom,panel-supply-entries = <&dsi_amoled_panel_pwr_supply>;
 	qcom,mdss-dsi-bl-pmic-control-type = "bl_ctrl_dcs";
@@ -191,7 +191,7 @@
 };
 
 &mdss_mdp {
-	connectors = <&sde_rscc &sde_wb>;
+	connectors = <&sde_rscc &sde_wb &sde_dsi>;
 };
 
 &pm660l_lcdb {
