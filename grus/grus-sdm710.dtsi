@@ -148,6 +148,7 @@
 	};
 };
 
+/*
 &red_led {
 	status = "disabled";
 };
@@ -159,6 +160,7 @@
 &blue_led {
 	status = "disabled";
 };
+*/
 
 &qupv3_se7_i2c {
 	status = "ok";
@@ -253,7 +255,7 @@
 };
 
 &removed_region {
-	reg = <0 0x85fc0000 0 0x4b40000>;
+	reg = <0 0x86200000 0 0x4900000>;
 };
 
 &qcom_seecom {
@@ -783,7 +785,7 @@
 	};
 };
 
-&reserved_memory {
+&reserved_mem {
 	ramdump_fb_mem: ramdump_fb_region@af000000 {
 		compatible = "removed-dma-pool";
 		no-map;
